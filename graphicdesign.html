@@ -1,1 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="styles.css" />
 
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graphic Design</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            // Add smooth scrolling to all links
+            $("a").on('click', function(event) {
+
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
+
+                    // Store hash
+                    var hash = this.hash;
+
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function() {
+
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                    });
+                } // End if
+            });
+        });
+    </script>
+</head>
+<html>
+
+<body>
+
+    <!--    HEADER START-->
+    <div id="header">
+        <!--        TITLE START-->
+        <div id="title">
+            <div class="logo">
+                <a style="font-size: 48px;" href="index.html">Nitara Brooks</a>
+
+            </div>
+            <!--NAVBAR-->
+            <div id="navbar">
+                <a href="about.html"><u>About</u></a>
+
+
+                <div class="dropdown">
+                    <button class="dropbtn"><u>Work</u></button>
+                    <div class="dropdown-content">
+                        <a href="graphicdesign.html"><u>Graphic Design</u>
+                        </a>
+                        <a href="studio.html"><u>Studio Art</u></a>
+                    </div>
+
+                </div>
+                <!--<a href="contact.html"><u>Contact</u></a>-->
+
+
+
+            </div>
+
+            <!--NAVBAR END-->
+
+
+            <!--TITLE END-->
+        </div>
+        <!--HEADER END-->
+
+
+
+
+        <!--2025 PORTFOLIO START-->
+        <div class="portfolio">
+            <!--<h4>2025 Graphic Design Portfolio</h4>-->
+            <a style="padding: 0px;" href="portfolio.html">
+                <img src="GD_Work_Images/Portfolio_Cover.jpg" class="portfolioimg">
+            </a>
+        </div>
+        <!--2025 PORTFOLIO END-->
+
+        <!--YEARS START-->
+        <div class="genre">
+            <h4 style="font-size: 40px; margin-top: 40px ">All Work</h4>
+
+        </div>
+        <!--        <table>
+  <tr>
+    <th>Year</th>
+    <td>2025</td>
+    <td>2024</td>
+  </tr>
+  
+</table>-->
+
+        <!--YEARS END-->
+        <!--PROJECT OVERLAY-->
+
+
+
+        <!--PROJECT OVERLAY-->
+
+
+
+        <!--BRANDING START-->
+        <div style="margin-top: 10px" class="label">
+            <h3>Branding & Identity</h3>
+
+        </div>
+
+
+
+
+
+
+        <table>
+            <tr>
+                <td>
+                    <div class="container">
+                        <img src="GD_Work_Images/crabsea/crabsea_cover.jpg" class="gdimage">
+                        <div class="overlay">
+
+                            <a href="crabsea.html" class="icon" title="User Profile">
+                                <h3>Crab Sea</h3>
+                                <i class="fa fa-user"></i>
+                            </a>
+                        </div>
+                    </div>
+                </td>
+
+
+                <td>
+                    <div class="container">
+                        <img src="GD_Work_Images/bivvy/bivvy_cover.jpg" class="gdimage">
+                        <div class="overlay">
+                            <a href="bivvy.html" class="icon" title="User Profile">
+                                <h3>Bivvy</h3>
+                                <i class="fa fa-user"></i>
+                            </a>
+                        </div>
+                    </div>
+                </td>
+
+                <td>
+                    <div class="container">
+                        <img src="GD_Work_Images/hullabaloo/hullabaloo_cover.jpg" class="gdimage">
+                        <div class="overlay">
+                            <a href="hullabaloo.html" class="icon" title="User Profile">
+                                <h3>Hullabaloo</h3>
+                                <i class="fa fa-user"></i>
+                            </a>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <div class="container">
+                        <img src="GD_Work_Images/inbloom/inbloom_cover.jpg" class="gdimage">
+                        <div class="overlay">
+
+                            <a href="#" class="icon" title="User Profile">
+                                <h3>In Bloom</h3>
+                                <i class="fa fa-user"></i>
+                            </a>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            
+        </table>
+
+        <!--BRANDING END-->
+        <!--PRINTED MEDIA START-->
+        <div class="label">
+            <h3>Print & Publication</h3>
+
+        </div>
+
+        <table>
+            <tr>
+                <td>
+                    <div class="container">
+                        <img src="GD_Work_Images/mml/mml_cover.jpg" class="gdimage">
+                        <div class="overlay">
+
+                            <a href="#" class="icon" title="User Profile">
+                                <h3>Music as a Means of Living</h3>
+                                <i class="fa fa-user"></i>
+                            </a>
+                        </div>
+                    </div>
+                </td>
+
+
+                <td>
+                    <div class="container">
+                        <img src="GD_Work_Images/mml/mmlzine_cover.jpg" class="gdimage">
+                        <div class="overlay">
+                            <a href="#" class="icon" title="User Profile">
+                                <h3><q>Music as a Means of Living</q> Zine</h3>
+                                <i class="fa fa-user"></i>
+                            </a>
+                        </div>
+                    </div>
+                </td>
+
+                <td>
+                    <div class="container">
+                        <img src="GD_Work_Images/bag/bag_cover.jpg" class="gdimage">
+                        <div class="overlay">
+                            <a href="#" class="icon" title="User Profile">
+                                <h3>Black American Gothic</h3>
+                                <i class="fa fa-user"></i>
+                            </a>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="container">
+                        <img src="GD_Work_Images/rop/rop_cover.jpg" class="gdimage">
+                        <div class="overlay">
+
+                            <a href="#" class="icon" title="User Profile">
+                                <h3>Reflection of Practice</h3>
+                                <i class="fa fa-user"></i>
+                            </a>
+                        </div>
+                    </div>
+                </td>
+
+
+            </tr>
+
+        </table>
+        <!--PRINTED MEDIA END-->
+        
+        
+         <!--ILLUSTRATION START-->
+        
+<div class="label">
+            <h3>Illustration</h3>
+
+        </div>
+
+        <table>
+            <tr>
+                <td>
+                    <div class="container">
+                        <img src="GD_Work_Images/taileybone/taileybone_cover.jpg" class="gdimage">
+                        <div class="overlay">
+
+                            <a href="#" class="icon" title="User Profile">
+                                <h3>Tailey Bone</h3>
+                                <i class="fa fa-user"></i>
+                            </a>
+                        </div>
+                    </div>
+                </td>
+
+
+                <td>
+                    <div class="container">
+                        
+                    </div>
+                </td>
+
+                <td>
+                    <div class="container">
+                        
+                        
+                    </div>
+                </td>
+            </tr>
+            
+
+        </table>
+   <!--ILLUSTRATION END-->     
+        
+
+
+
+
+
+</body></html>
