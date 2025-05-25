@@ -1,85 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <link rel="stylesheet" href="styles.css" />
-
+<script src="nav.js"></script>
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Graphic Design</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script>
-        $(document).ready(function() {
-            // Add smooth scrolling to all links
-            $("a").on('click', function(event) {
-
-                // Make sure this.hash has a value before overriding default behavior
-                if (this.hash !== "") {
-                    // Prevent default anchor click behavior
-                    event.preventDefault();
-
-                    // Store hash
-                    var hash = this.hash;
-
-                    // Using jQuery's animate() method to add smooth page scroll
-                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-                    $('html, body').animate({
-                        scrollTop: $(hash).offset().top
-                    }, 800, function() {
-
-                        // Add hash (#) to URL when done scrolling (default click behavior)
-                        window.location.hash = hash;
-                    });
-                } // End if
-            });
-        });
-    </script>
+    
 </head>
 <html>
 
 <body>
 
-    <!--    HEADER START-->
-    <div id="header">
-        <!--        TITLE START-->
-        <div id="title">
-            <div class="logo">
-                <a style="font-size: 48px;" href="index.html">Nitara Brooks</a>
-
-            </div>
-            <!--NAVBAR-->
-            <div id="navbar">
-                <a href="about.html"><u>About</u></a>
-
-
-                <div class="dropdown">
-                    <button class="dropbtn"><u>Work</u></button>
-                    <div class="dropdown-content">
-                        <a href="graphicdesign.html"><u>Graphic Design</u>
-                        </a>
-                        <a href="studio.html"><u>Studio Art</u></a>
-                    </div>
-
-                </div>
-                <!--<a href="contact.html"><u>Contact</u></a>-->
-
-
-
-            </div>
-
-            <!--NAVBAR END-->
-
-
-            <!--TITLE END-->
+            <!--TITLE START-->
+    <div id="title">
+        <div class="logo">
+            <a style="font-size: 48px;" href="index.html">Nitara Brooks</a>
         </div>
-        <!--HEADER END-->
+        <!--NAVBAR-->
+      <div class="topnav" id="myTopnav">
+  <div class="dropdown">
+    <button class="dropbtn"><u>Work</u>
+      <i class="fa fa-caret-down" style="font-size: 18px;">&#9662</i>
+    </button>
+    <div class="dropdown-content">
+      <a href="graphicdesign.html"><u>Graphic Design</u></a>
+      <a href="studio.html"><u>Studio Art</u></a>
+    </div>
+  </div>
+  <a href="about.html"><u>About</u></a>
+  <a href="javascript:void(0);" class="clicky" onclick="myFunction()">&#9776;</a>
+</div>
 
 
+
+
+
+        <!--NAVBAR END-->
+
+ </div>
+        <!--TITLE END-->
 
 
         <!--2025 PORTFOLIO START-->
         <div class="portfolio">
             <!--<h4>2025 Graphic Design Portfolio</h4>-->
-            <a style="padding: 0px;" href="portfolio.html">
+            <a class="portfoliolink" style="padding:0px; display: flex;" href="portfolio.html">
                 <img src="GD_Work_Images/Portfolio_Cover.jpg" class="portfolioimg">
             </a>
         </div>
@@ -87,7 +53,7 @@
 
         <!--YEARS START-->
         <div class="genre">
-            <h4 style="font-size: 40px; margin-top: 40px ">All Work</h4>
+            <h4 style="font-size: 40px; margin-top: 40px; margin-left: 20px; ">All Work</h4>
 
         </div>
         <!--        <table>
@@ -118,10 +84,8 @@
 
 
 
-
-        <table>
-            <tr>
-                <td>
+<div class="gdcontainer">
+        
                     <div class="container">
                         <img src="GD_Work_Images/crabsea/crabsea_cover.jpg" class="gdimage">
                         <div class="overlay">
@@ -132,10 +96,10 @@
                             </a>
                         </div>
                     </div>
-                </td>
+               
 
 
-                <td>
+                
                     <div class="container">
                         <img src="GD_Work_Images/bivvy/bivvy_cover.jpg" class="gdimage">
                         <div class="overlay">
@@ -145,9 +109,9 @@
                             </a>
                         </div>
                     </div>
-                </td>
+                
 
-                <td>
+                
                     <div class="container">
                         <img src="GD_Work_Images/hullabaloo/hullabaloo_cover.jpg" class="gdimage">
                         <div class="overlay">
@@ -157,26 +121,19 @@
                             </a>
                         </div>
                     </div>
-                </td>
-            </tr>
 
-            <tr>
-                <td>
                     <div class="container">
                         <img src="GD_Work_Images/inbloom/inbloom_cover.jpg" class="gdimage">
                         <div class="overlay">
 
-                            <a href="#" class="icon" title="User Profile">
+                            <a href="inbloom.html" class="icon" title="User Profile">
                                 <h3>In Bloom</h3>
                                 <i class="fa fa-user"></i>
                             </a>
                         </div>
                     </div>
-                </td>
-            </tr>
-            
-        </table>
 
+</div>
         <!--BRANDING END-->
         <!--PRINTED MEDIA START-->
         <div class="label">
@@ -184,35 +141,32 @@
 
         </div>
 
-        <table>
-            <tr>
-                <td>
+        <div class="gdcontainer">
+            
                     <div class="container">
                         <img src="GD_Work_Images/mml/mml_cover.jpg" class="gdimage">
                         <div class="overlay">
 
-                            <a href="#" class="icon" title="User Profile">
+                            <a href="mml.html" class="icon" title="User Profile">
                                 <h3>Music as a Means of Living</h3>
                                 <i class="fa fa-user"></i>
                             </a>
                         </div>
                     </div>
-                </td>
+               
 
 
-                <td>
+                
                     <div class="container">
-                        <img src="GD_Work_Images/mml/mmlzine_cover.jpg" class="gdimage">
+                        <img src="GD_Work_Images/mml_zine/mmlzine_cover.jpg" class="gdimage">
                         <div class="overlay">
-                            <a href="#" class="icon" title="User Profile">
+                            <a href="mmlzine.html" class="icon" title="User Profile">
                                 <h3><q>Music as a Means of Living</q> Zine</h3>
                                 <i class="fa fa-user"></i>
                             </a>
                         </div>
                     </div>
-                </td>
 
-                <td>
                     <div class="container">
                         <img src="GD_Work_Images/bag/bag_cover.jpg" class="gdimage">
                         <div class="overlay">
@@ -222,73 +176,60 @@
                             </a>
                         </div>
                     </div>
-                </td>
-            </tr>
-            <tr>
-                <td>
                     <div class="container">
                         <img src="GD_Work_Images/rop/rop_cover.jpg" class="gdimage">
                         <div class="overlay">
 
-                            <a href="#" class="icon" title="User Profile">
+                            <a href="rop.html" class="icon" title="User Profile">
                                 <h3>Reflection of Practice</h3>
                                 <i class="fa fa-user"></i>
                             </a>
                         </div>
                     </div>
-                </td>
 
 
-            </tr>
 
-        </table>
+        </div>
         <!--PRINTED MEDIA END-->
-        
-        
-         <!--ILLUSTRATION START-->
-        
-<div class="label">
+
+
+        <!--ILLUSTRATION START-->
+
+        <div class="label">
             <h3>Illustration</h3>
 
         </div>
 
-        <table>
-            <tr>
-                <td>
+        <div class="gdcontainer">
                     <div class="container">
                         <img src="GD_Work_Images/taileybone/taileybone_cover.jpg" class="gdimage">
                         <div class="overlay">
 
-                            <a href="#" class="icon" title="User Profile">
+                            <a href="taileybone.html" class="icon" title="User Profile">
                                 <h3>Tailey Bone</h3>
                                 <i class="fa fa-user"></i>
                             </a>
                         </div>
                     </div>
-                </td>
 
 
-                <td>
                     <div class="container">
-                        
-                    </div>
-                </td>
 
-                <td>
+                    </div>
+
                     <div class="container">
-                        
-                        
+
+
                     </div>
-                </td>
-            </tr>
-            
 
-        </table>
-   <!--ILLUSTRATION END-->     
-        
+</div>
+        <!--ILLUSTRATION END-->
 
 
 
 
 
-</body></html>
+
+</body>
+
+</html>

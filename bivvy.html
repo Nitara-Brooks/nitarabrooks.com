@@ -1,79 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <link rel="stylesheet" href="styles.css" />
-
+<script src="nav.js"></script>
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bivvy</title>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script>
-        $(document).ready(function() {
-            // Add smooth scrolling to all links
-            $("a").on('click', function(event) {
-
-                // Make sure this.hash has a value before overriding default behavior
-                if (this.hash !== "") {
-                    // Prevent default anchor click behavior
-                    event.preventDefault();
-
-                    // Store hash
-                    var hash = this.hash;
-
-                    // Using jQuery's animate() method to add smooth page scroll
-                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-                    $('html, body').animate({
-                        scrollTop: $(hash).offset().top
-                    }, 800, function() {
-
-                        // Add hash (#) to URL when done scrolling (default click behavior)
-                        window.location.hash = hash;
-                    });
-                } // End if
-            });
-        });
-
-    </script>
+    
 </head>
 <html>
 
 <body>
 
-    <!--    HEADER START-->
-    <div id="header">
-        <!--        TITLE START-->
-        <div id="title">
-            <div class="logo">
-                <a style="font-size: 48px;" href="index.html">Nitara Brooks</a>
-
-            </div>
-            <!--NAVBAR-->
-            <div id="navbar">
-                <a href="about.html"><u>About</u></a>
-
-
-                <div class="dropdown">
-                    <button class="dropbtn"><u>Work</u></button>
-                    <div class="dropdown-content">
-                        <a href="graphicdesign.html"><u>Graphic Design</u>
-                        </a>
-                        <a href="studio.html"><u>Studio Art</u></a>
-                    </div>
-
-                </div>
-                <!--<a href="contact.html"><u>Contact</u></a>-->
-
-
-
-            </div>
-
-            <!--NAVBAR END-->
-
-
-            <!--TITLE END-->
+           <!--TITLE START-->
+    <div id="title">
+        <div class="logo">
+            <a style="font-size: 48px;" href="index.html">Nitara Brooks</a>
         </div>
-        <!--HEADER END-->
+        <!--NAVBAR-->
+      <div class="topnav" id="myTopnav">
+  <div class="dropdown">
+    <button class="dropbtn"><u>Work</u>
+      <i class="fa fa-caret-down" style="font-size: 18px;">&#9662</i>
+    </button>
+    <div class="dropdown-content">
+      <a href="graphicdesign.html"><u>Graphic Design</u></a>
+      <a href="studio.html"><u>Studio Art</u></a>
+    </div>
+  </div>
+  <a href="about.html"><u>About</u></a>
+  <a href="javascript:void(0);" class="clicky" onclick="myFunction()">&#9776;</a>
+</div>
+
+
+
+
+
+        <!--NAVBAR END-->
+
+ </div>
+        <!--TITLE END-->
 
 
 
@@ -82,37 +49,35 @@
 
 
         <div class="projectheader">
-            <h2>Bivvy</h2>
-            <p style="font-family: adobe-jenson-pro-display, serif; margin-top: -25px;">2025</p>
-            An imagined branding and call to action for a website, envisioned by Amalie Mccracken, that helps people find activities to do around their local areas. For this specific project, we worked on the branch for Boone, North Carolina.
+            <h2 style="line-height: 0;">Bivvy</h2>
+            <p style="font-family: adobe-jenson-pro-display, serif;">2025</p>
+            <br>
+            <br>
+            
+            <p>An imagined branding and call to action for a website, envisioned by Amalie Mccracken, that helps people find activities to do around their local areas. For this specific project, we worked on the branch for Boone, North Carolina.
             <br>
             <br>
             <q>Bivvy believes in the excitement and spontaneity of life! New experiences are always just around the corner, especially in your local community! With our amazingly curated quiz, you can find a random adventure to spice up your daily routine!</q>
-            <p>
+            </p>
         </div>
         <br>
-        <div class="workrow">
+        <div class="rowcontainer">
 
 
-            <div class="workcolumn4">
-                <img style="width: 1240px;" src="GD_Work_Images/bivvy/bivvy_4.jpg" class="workwidth">
-
-
-            </div>
+                <img src="GD_Work_Images/bivvy/bivvy_4.jpg" class="workimage">
 
 
 
-
-        </div>
+                     </div>
 
         <br>
         <br>
 
         <div class="projectdescription">
+        
+                The client wanted an outdoor feel similar to the nostalgia of summer camp, while not pigeonholing the brand too much. Although the activities center around the outdoors, it is not the only type of activity the website provides access to.
+           
 
-            The client wanted an outdoor feel similar to the nostalgia of summer camp, while not pigeonholing the brand too much. Although the activities center around the outdoors, it is not the only type of activity the website provides access to.
-
-            <p>
         </div>
         <br>
 
@@ -120,54 +85,39 @@
         <br>
 
 
-        <div class="workrow">
+        <div class="rowcontainer">
 
 
-            <div class="workcolumn4">
-                <img style="width: 1240px;" src="GD_Work_Images/bivvy/bivvy_1.jpg" class="workwidth">
-
-
-            </div>
-
+                <img src="GD_Work_Images/bivvy/bivvy_1.jpg" class="workimage">
 
         </div>
         <br>
         <br>
 
         <div class="projectdescription">
+            
+                I ran with the summer camp aesthetic and developed a brighter color palette, expressing excitement and the activeness of Bivvy. When it came to typography, I gave a slight nod toward vintage camp and hiking guides, a notion mentioned by the client in our meeting.
+                <br>
+                <br>
+                The logo itself is active in the way the <q>v</q> and <q>y</q> jump to interlock with other letters. That combined with the <q>iv</q> ligature responds to the way the resource connects and creates community as individuals using Bivvy explore their local area.
 
-            I ran with the summer camp aesthetic and developed a brighter color palette, expressing excitement and the activeness of Bivvy. When it came to typography, I gave a slight nod toward vintage camp and hiking guides, a notion mentioned by the client in our meeting.
-            <br>
-            <br>
-            The logo itself is active in the way the <q>v</q> and <q>y</q> jump to interlock with other letters. That combined with the <q>iv</q> ligature responds to the way the resource connects and creates community as individuals using Bivvy explore their local area.
-
-            <p>
+            
         </div>
         <br>
         <br>
-        <div class="workrow">
+        <div class="rowcontainer">
 
 
-            <div class="workcolumn4">
-                <img style="width: 1240px;" src="GD_Work_Images/bivvy/bivvy_6.jpg" class="workwidth">
+                <img src="GD_Work_Images/bivvy/bivvy_6.jpg" class="workimage">
 
 
-            </div>
 
 
         </div>
-        <div class="workrow">
+        <div class="rowcontainer">
 
 
-            <div class="workcolumn4">
-                <img style="width: 1240px;" src="GD_Work_Images/bivvy/bivvy_5.jpg" class="workwidth">
-
-
-            </div>
-
-
-
-
+                <img src="GD_Work_Images/bivvy/bivvy_5.jpg" class="workimage">
 
 
         </div>
@@ -178,44 +128,36 @@
             The call to action has a playful format, portraying inclusivity when it comes to who can use the website. I wanted to avoid seeming too high brow or monetarily inaccessible. Bivvy's vision allows for activities that vary in price range meaning anyone can be satisfied with the service.
 
 
-            <p>
+            
         </div>
         <br>
         <br>
-        <div class="workrow">
+        <div class="rowcontainer">
 
 
-            <div class="workcolumn3">
-                <img style="width: 620px;" src="GD_Work_Images/bivvy/bivvy_3.jpg" class="workwidth">
+            <div class="workcontainer">
+                <img src="GD_Work_Images/bivvy/bivvy_3.jpg" class="workimage">
 
-                <img style="width: 620px;" src="GD_Work_Images/bivvy/bivvy_8.jpg" class="workwidth">
+                <img src="GD_Work_Images/bivvy/bivvy_8.jpg" class="workimage">
             </div>
-            <div class="workcolumn2">
-                <img style="width: 620px;" src="GD_Work_Images/bivvy/bivvy_7.jpg" class="workwidth">
+            <div class="workcontainer">
+                <img src="GD_Work_Images/bivvy/bivvy_7.jpg" class="workimage">
 
-                <img style="width: 620px;" src="GD_Work_Images/bivvy/bivvy_9.jpg" class="workwidth">
+                <img src="GD_Work_Images/bivvy/bivvy_9.jpg" class="workimage">
 
             </div>
 
         </div>
-        
-        
-<div class="workrow">
 
 
-            <div class="workcolumn4">
-                <img style="width: 1240px;" src="GD_Work_Images/bivvy/bivvy_10.jpg" class="workwidth">
+        <div class="rowcontainer">
 
 
-            </div>
-
-
+                <img src="GD_Work_Images/bivvy/bivvy_10.jpg" class="workimage">
 
 
 
 
         </div>
 
-</body>
-
-</html>
+</body></html>

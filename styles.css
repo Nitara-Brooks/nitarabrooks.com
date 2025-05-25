@@ -32,6 +32,7 @@
 
 
 
+
 /*NAVBAR*/
 /* buttons */
 
@@ -46,55 +47,156 @@ a:visited {
     font-size: 20px;
 }
 
-/* dropdown */
-
-.dropbtn {
+#title {
+    display: block;
     background-color: #E5F1CD;
-    color: #5D5C1B;
+    position: sticky;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    top: 0;
+    z-index: 1;
+
+}
+
+.logo {
+    max-width: 1240px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: none;
+    font-family: cronos-pro-display, sans-serif;
+
+
+}
+
+.topnav {
+    background-color: none;
+    overflow: hidden;
+    max-width: 1240px;
+    margin-left: auto;
+    margin-right: auto;
     font-size: 20px;
-    padding: 14px 25px;
-    border: 3px;
-    border-color: #5D5C1B;
+    margin-top: -60px;
+
+}
+
+.topnav > a {
+    float: right;
+    display: block;
+    color: #5D5C1B;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
     font-family: "adobe-jenson-pro-display", serif;
+
+}
+
+.topnav .clicky {
+    display: none;
 }
 
 .dropdown {
-    position: relative;
-    display: inline-block;
+    float: right;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
     font-size: 20px;
+    border: none;
+    outline: none;
+    color: #5D5C1B;
+    padding: 14px 25px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    font-family: "adobe-jenson-pro-display", serif;
 }
 
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #E5F1CD;
-    min-width: 200px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-    border: 3px;
-    font-size: 20px;
+    background-color: relative;
+    max-width: 200px;
+    z-index: 2;
 }
 
-.dropdown-content a {
-    color: #5D5C1B;
+.dropdown-content > a {
+    float: none;
+    color: relative;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
+    text-align: center;
     font-size: 20px;
+    font-family: "adobe-jenson-pro-display", serif;
+
+}
+
+
+.topnav a:hover,
+.dropdown:hover .dropbtn {
+    background-color: rgba(93, 92, 27, 0.32);
+    color: relative;
 }
 
 .dropdown-content a:hover {
-    font-size: 20px;
+    background-color: relative;
+    color: relative;
 }
 
 .dropdown:hover .dropdown-content {
     display: block;
-    font-size: 20px;
 }
 
-.dropdown:hover .dropbtn {
 
-    font-size: 20px;
+@media screen and (max-width: 620px) {
+
+    .topnav a,
+    .dropdown .dropbtn {
+        display: none;
+    }
+
+    .topnav a.clicky {
+        float: right;
+        display: block;
+
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .topnav.responsive{
+        position: relative;
+    }
+
+    .topnav.responsive a.clicky {
+        position: absolute;
+        right: 0;
+        top: 0;
+
+    }
+
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+    .topnav.responsive .dropdown {
+        float: none;
+    }
+
+    .topnav.responsive .dropdown-content {
+        position: relative;
+    }
+
+    .topnav.responsive .dropdown .dropbtn {
+        display: block;
+        width: 100%;
+        text-align: left;
+        margin-top: 50px;
+    }
 }
 
 /* body */
@@ -107,54 +209,27 @@ body {
     margin-right: auto;
 }
 
-#header {
-    background-color: #E5F1CD;
-    width: 1440px;
-    margin-left: auto;
-    margin-right: auto;
-}
 
-#title {
-    font-family: cronos-pro-display, sans-serif;
-    color: #5D5C1B;
-    font-size: 48px;
-    width: 1240px;
-    margin-bottom: 30px;
-    margin-top: 30px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    position: sticky;
-    background-color: #E5F1CD;
-    top: 0;
-    z-index: 1;
-}
-
-#navbar {
-    background-color: #E5F1CD;
-    padding-top: 30px;
-    position: relative;
-    font-size: 20px;
-    float: right;
-    margin-top: -95px;
-    font-family: "adobe-jenson-pro-display", serif;
-}
 
 .homeimg {
-    display: block;
+    display: flex;
     margin-left: auto;
     margin-right: auto;
-    width: 1240px;
-    height: 830px;
+    max-width: 1240px;
+    max-height: 830px;
 
 }
 
 .homepageimg {
-    display: block;
+
+    display: flex;
     margin-left: auto;
     margin-right: auto;
-    width: 1240px;
-    height: 830px;
+    max-width: 1240px;
+    max-height: 830px;
+    height: 100%;
+    width: 100%;
+
 
 
 
@@ -179,16 +254,14 @@ u {
 
 
 .aboutcolumn {
-    float: left;
     width: 50%;
     background-color: #5D5C1B;
-    padding-left: 70px;
-    padding-right: 70px;
-    padding-bottom: 94px;
-    padding-top: 94px;
+    align-content: center;
+
     height: 900px;
-    width: 620px;
-    margin-left: 100px;
+    max-width: 620px;
+    margin-left: auto;
+    margin-right: auto;
 
 }
 
@@ -198,52 +271,57 @@ u {
     float: left;
     width: 50%;
     background-color: #5D5C1B;
-    padding-top: 30px;
+    padding-top: 50px;
     padding-bottom: 50px;
     padding-left: 64px;
     padding-right: 64px;
-    height: 900px;
-    width: 620px;
+    min-height: 900px;
+    max-width: 620px;
     margin: auto;
+}
 
+.aboutrow {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1240px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
-.aboutrow:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-
-@media screen and (max-width: 620px) {
-    .aboutcolumn {
-        width: 100%;
-    }
-
-    .aboutcolumn2 {
-        width: 100%;
-    }
-}
 
 
 .aboutimg {
-    margin: auto;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 480px;
+    height: auto;
 
 }
 
-h2 {
-    width: 505px;
-    color: #E5F1CD;
-    font-family: cronos-pro-display, sans-serif;
-    font-size: 30px;
+
+/*I AM WORKING ON MOVING IMAGE TO THE CENTER
+*/
+
+
+@media (max-width:1200px) {
+    .aboutcolumn {
+        display: flex;
+        flex-wrap: wrap;
+        flex: 100%;
+        max-width: 100%;
+    }
 }
 
-p {
-    width: 505px;
-    color: #E5F1CD;
-    font-family: "adobe-jenson-pro-display", serif;
-    font-size: 20px;
+@media (max-width:1200px) {
+    .aboutcolumn2 {
+
+        flex-wrap: wrap;
+        flex: 100%;
+        max-width: 100%;
+    }
 }
 
 /*ABOUT COLUMNS*/
@@ -267,26 +345,39 @@ h4 {
 
 
 .portfolioimg {
-    display: block;
-    height: 500px;
+    height: 100%;
+    width: 100%;
+    max-height: 500px;
+    max-width: 800px;
     margin-left: auto;
     margin-right: auto;
+    display: flex;
 
 }
 
 .portfolio {
+    display: flex;
     background-color: #5D5C1B;
-    width: 850px;
+    max-width: 850px;
     color: #E5F1CD;
     margin-left: auto;
     margin-right: auto;
     font-size: 50px;
-    height: 660px;
+    max-height: 660px;
     align-content: center;
+
     padding: 20px;
 
 }
 
+.portfoliolink {
+    display: block;
+    max-height: 500px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px;
+}
 
 
 /*PROJECT OVERLAY*/
@@ -294,12 +385,33 @@ h4 {
 .container {
     position: relative;
     width: 100%;
-    max-width: 400px;
+    max-width: 32%;
+    margin: 5px;
 }
+
+@media (max-width:1200px) {
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        flex: 49%;
+        max-width: 49%;
+    }
+}
+
+@media (max-width:995px) {
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
 
 .gdimage {
     display: block;
-    width: 400px;
+    padding: 5px;
+    width: 100%;
     height: auto;
 }
 
@@ -313,7 +425,7 @@ h4 {
     width: 100%;
     opacity: 0;
     transition: .3s ease;
-    background-color: #5D5C1B;
+
     color: #E5F1CD;
 }
 
@@ -327,8 +439,8 @@ h4 {
     font-size: 30px;
     font-family: "adobe-jenson-pro-bold-display";
     font-size: 100px;
-    width: 400px;
-    height: 260px;
+    width: 100%;
+    height: 100%;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -348,21 +460,32 @@ h4 {
 
 table {
     max-width: 1240px;
-    padding: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     margin-left: auto;
     margin-right: auto;
 
 }
 
-th,
+/*th,
 td {
 
     width: 400px;
+}*/
+
+
+.gdcontainer {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1240px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .label {
+
     background-color: #5D5C1B;
-    width: 1240px;
+    max-width: 1240px;
     color: #E5F1CD;
     margin-top: 50px;
     margin-left: auto;
@@ -372,39 +495,43 @@ td {
     align-content: center;
     padding-left: 20px;
 }
+
 .projectheader {
     background-color: #5D5C1B;
-    width: 1240px;
+    max-width: 1240px;
     color: #E5F1CD;
     margin-top: 50px;
     margin-left: auto;
     margin-right: auto;
     font-size: 20px;
     align-content: center;
-    padding: 30px;
-  
-    
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 60px;
+    padding-right: 60px;
 }
 
 
 .projectdescription {
     background-color: #E5F1CD;
-    width: 1240px;
+    max-width: 1240px;
     color: #5D5C1B;
-    margin-top: 50px;
     margin-left: auto;
     margin-right: auto;
     font-size: 20px;
     align-content: center;
-    padding: 30px;
-  font-family: cronos-pro-display, sans-serif;
-    
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 60px;
+    padding-right: 60px;
+    font-family: cronos-pro-display, sans-serif;
+
 }
 
 
 .genre {
     background-color: #E5F1CD;
-    width: 1240px;
+    max-width: 1240px;
     color: #5D5C1B;
 
     margin-left: auto;
@@ -419,9 +546,7 @@ td {
 
 
 
-    {
-    box-sizing: border-box;
-}
+
 
 
 .printcolumn {
@@ -543,35 +668,73 @@ div.desc {
     box-sizing: border-box;
 }
 
+.rowcontainer {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1240px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
-.workcolumn {
-    float: left;
-    width: 50%;
-    background-color: #5D5C1B;
-    padding-top: 30px;
-    padding-bottom: 50px;
-    padding-left: 64px;
-    padding-right: 64px;
-margin-left: 100px;
-    width: 620px;
-    
-   
+.workimage {
+    display: block;
 
+    width: 100%;
+    height: auto;
 }
 
 
 
+.workcontainer {
+    position: relative;
+    width: 100%;
+    max-width: 50%;
+}
+
+@media (max-width:1200px) {
+    .workcontainer {
+        display: flex;
+        flex-wrap: wrap;
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+
+
+
+
+.wordcontainer {
+    float: left;
+    width: 50%;
+    background-color: #5D5C1B;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 60px;
+    padding-right: 60px;
+
+
+
+}
+
+@media (max-width:1200px) {
+    .wordcontainer {
+        display: flex;
+        flex-wrap: wrap;
+        flex: 100%;
+        max-width: 100%;
+
+    }
+}
+
 .workcolumn2 {
     float: left;
     width: 50%;
-     background-color: #E5F1CD;
-    margin: auto;
-    
 
-
+    height: auto;
     width: 620px;
-    
-    object-fit: contain;
+
+    margin: auto;
 
 }
 
@@ -579,20 +742,39 @@ margin-left: 100px;
     float: left;
     width: 50%;
     background-color: #E5F1CD;
-    
-    width: 620px;
-    margin-left:100px;
+
+    margin: auto;
+
 
 }
+
+/*when smaller, make column align center and fill space
+*/
+
 .workcolumn4 {
-    float: left;
     width: 100%;
     background-color: #E5F1CD;
-    
+
     width: 1240px;
-    margin-left:100px;
+    height: 100%;
+    width: 100%;
+    max-height: inherit;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+
 
 }
+
+
+
+.workrow {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1240px;
+}
+
+
 
 .workrow:after {
     content: "";
@@ -601,42 +783,53 @@ margin-left: 100px;
 }
 
 
-@media screen and (max-width: 620px) {
-    .aboutcolumn {
-        width: 100%;
-    }
-
-    .aboutcolumn2 {
-        width: 100%;
-    }
-}
 
 
-.workimg {
-    
 
 
-}
+
 
 .workwidth {
-    
+    float: left;
+    width: 100%;
+
+    display: flex;
+
+
+    max-width: 620px;
+    margin: auto;
     align-content: center;
 
 }
 
 h2 {
-    width: 505px;
+
     color: #E5F1CD;
     font-family: cronos-pro-display, sans-serif;
     font-size: 30px;
 }
 
 p {
-    width: 505px;
+
     color: #E5F1CD;
     font-family: "adobe-jenson-pro-display", serif;
     font-size: 20px;
+    display: contents;
 }
+
+.bigworkwidth {
+    float: left;
+    width: 100%;
+
+    display: flex;
+
+
+    max-width: 1240px;
+    margin: auto;
+    align-content: center;
+
+}
+
 
 /*WORK PAGE COLUMNS*/
 
@@ -683,7 +876,7 @@ input[type=submit]:hover {
 
 }*/
 
-.contactcontainer {
+/*.contactcontainer {
     border-radius: 5px;
     background-color: #5D5C1B;
     padding: 20px;
@@ -700,7 +893,7 @@ input[type=submit]:hover {
     font-size: 30px;
 
 
-}
+}*/
 
 /*.contactcol-25 {
     float: left;

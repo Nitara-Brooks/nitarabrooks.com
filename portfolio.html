@@ -1,80 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <link rel="stylesheet" href="styles.css" />
-
+<script src="nav.js"></script>
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script>
-        $(document).ready(function() {
-            // Add smooth scrolling to all links
-            $("a").on('click', function(event) {
 
-                // Make sure this.hash has a value before overriding default behavior
-                if (this.hash !== "") {
-                    // Prevent default anchor click behavior
-                    event.preventDefault();
-
-                    // Store hash
-                    var hash = this.hash;
-
-                    // Using jQuery's animate() method to add smooth page scroll
-                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-                    $('html, body').animate({
-                        scrollTop: $(hash).offset().top
-                    }, 800, function() {
-
-                        // Add hash (#) to URL when done scrolling (default click behavior)
-                        window.location.hash = hash;
-                    });
-                } // End if
-            });
-        });
-
-    </script>
 </head>
 <html>
 
 <body>
 
-    <!--    HEADER START-->
-    <div id="header">
-        <!--        TITLE START-->
-        <div id="title">
-            <div class="logo">
-                <a style="font-size: 48px;" href="index.html">Nitara Brooks</a>
-
-            </div>
-            <!--NAVBAR-->
-            <div id="navbar">
-                <a href="about.html"><u>About</u></a>
-
-
-                <div class="dropdown">
-                    <button class="dropbtn"><u>Work</u></button>
-                    <div class="dropdown-content">
-                        <a href="graphicdesign.html"><u>Graphic Design</u>
-                        </a>
-                        <a href="studio.html"><u>Studio Art</u></a>
-                    </div>
-
-                </div>
-                <!--<a href="contact.html"><u>Contact</u></a>-->
-
-
-
-            </div>
-
-            <!--NAVBAR END-->
-
-
-            <!--TITLE END-->
+            <!--TITLE START-->
+    <div id="title">
+        <div class="logo">
+            <a style="font-size: 48px;" href="index.html">Nitara Brooks</a>
         </div>
-        <!--HEADER END-->
+        <!--NAVBAR-->
+      <div class="topnav" id="myTopnav">
+  <div class="dropdown">
+    <button class="dropbtn"><u>Work</u>
+      <i class="fa fa-caret-down" style="font-size: 18px;">&#9662</i>
+    </button>
+    <div class="dropdown-content">
+      <a href="graphicdesign.html"><u>Graphic Design</u></a>
+      <a href="studio.html"><u>Studio Art</u></a>
+    </div>
+  </div>
+  <a href="about.html"><u>About</u></a>
+  <a href="javascript:void(0);" class="clicky" onclick="myFunction()">&#9776;</a>
+</div>
 
+
+
+
+
+        <!--NAVBAR END-->
+
+ </div>
+        <!--TITLE END-->
 
 
 
@@ -88,10 +54,13 @@
 
 
         <!--PROJECT 1 -->
-        <div class="workrow">
-            <div class="workcolumn">
-                <h2>In Bloom</h2>
-                <p style="font-family: adobe-jenson-pro-display, serif; margin-top: -25px;">2024</p>
+        <div class="rowcontainer">
+            <div class="wordcontainer">
+                <h2 style="line-height: 0px;">In Bloom</h2>
+                <p style="font-family: adobe-jenson-pro-display, serif;">2024</p>
+                <br>
+                <br>
+                <br>
                 <p>
 
                     Branding for the spring 2024 Graphic Design BFA Senior Exhibition at Appalachian State University. With this collaborative brand identity, we aimed to create a sense of childlike joy and growth as these designers moved from the comfort of college to the “real world.” Assigning a system of flower icons, each artist and project was easily identifiable.
@@ -99,85 +68,79 @@
                     <br>
                     I worked mainly with production, printing the vinyl, stickers, and supplementary material.
 
-
+                </p>
 
 
             </div>
-            <div class="workcolumn2">
-                <img style="width: 620px;" src="GD_Work_Images/inbloom/inbloom_3.jpg" class="workwidth" style="width:100%;cursor:pointer" onclick="onClick(this)">
+            <div class="workcontainer">
+                <img src="GD_Work_Images/inbloom/InBloom_3.jpg" class="workimage">
 
 
             </div>
         </div>
 
         <br>
-        <div class="workrow">
-            <div class="workcolumn3">
+        <div class="rowcontainer">
+            <div class="workcontainer">
 
-                <img style="max-width: 620px;" src="GD_Work_Images/inbloom/inbloom_1.jpg" class="workwidth">
+                <img src="GD_Work_Images/inbloom/InBloom_1.jpg" class="workimage">
+                <img src="GD_Work_Images/inbloom/InBloom_2.jpg" class="workimage">
+                <img src="GD_Work_Images/inbloom/InBloom_5.jpg" class="workimage">
 
-                <img style="max-width: 620px;" src="GD_Work_Images/inbloom/inbloom_2.jpg" class="workwidth">
-
-
-
-                <img style="max-width: 620px;" src="GD_Work_Images/inbloom/inbloom_5.jpg" class="workwidth">
             </div>
+            <div class="workcontainer">
 
-            <div class="workcolumn2">
+                <img src="GD_Work_Images/inbloom/InBloom_6.jpg" class="workimage">
+                <img src="GD_Work_Images/inbloom/InBloom_7.jpg" class="workimage">
+                <img src="GD_Work_Images/inbloom/InBloom_9.jpg" class="workimage">
+                <img src="GD_Work_Images/inbloom/InBloom_4.jpg" class="workimage">
 
-                <img style="max-width: 620px;" src="GD_Work_Images/inbloom/inbloom_6.jpg" class="workwidth">
 
-                <img style="max-width: 620px;" src="GD_Work_Images/inbloom/inbloom_7.jpg" class="workwidth">
 
-                <img style="max-width: 620px;" src="GD_Work_Images/inbloom/inbloom_9.jpg" class="workwidth">
-
-                <img style="max-width: 620px;" src="GD_Work_Images/inbloom/inbloom_4.jpg" class="workwidth">
             </div>
         </div>
+    
         <br>
         <br>
         <!--PROJECT 2 -->
-        <div class="workrow">
-            <div class="workcolumn">
-                <h2>Music as a Means of Living</h2>
-                <p style="font-family: adobe-jenson-pro-display, serif; margin-top: -25px;">2025</p>
+        <div class="rowcontainer">
+            <div class="wordcontainer">
+                <h2 style="line-height: 0px;">Music as a Means of Living</h2>
+                <p style="font-family: adobe-jenson-pro-display, serif;">2025</p>
+                <br>
+                <br>
+                <br>
                 <p>
 
                     Inspired by a sudden realization at a concert, Music as a Means of Living is an exploration of experiences and goals I look forward to in life. Music is a powerful tool and has helped me work through feeling/ expressing emotions. It is not the theme of this project but the catalyst for an extensive line of thinking. I’ve created five posters to help embody my findings based on the themes of Music, Love, Hate, Discovery,
                     and Independence.
-
+                </p>
 
 
 
             </div>
-            <div class="workcolumn2">
+            <div class="workcontainer">
 
-                <img style="max-width: 620px;" src="GD_Work_Images/mml/mml_6.png" class="workwidth">
+                <img src="GD_Work_Images/mml/mml_6.png" class="workimage">
 
             </div>
         </div>
 
         <br>
-        <div class="workrow">
-            <div class="workcolumn3">
+        <div class="rowcontainer">
+            <div class="workcontainer">
 
-                <img style="max-width: 620px;" src="GD_Work_Images/mml/mml_2.png" class="workwidth">
-
-                <img style="max-width: 620px;" src="GD_Work_Images/mml/mml_3.png" class="workwidth">
-
-                <img style="width: 620px;" src="GD_Work_Images/mml/mml_1.jpg" class="workwidth">
-
-
+                <img src="GD_Work_Images/mml/mml_2.png" class="workimage">
+                <img src="GD_Work_Images/mml/mml_3.png" class="workimage">
+                <img src="GD_Work_Images/mml/mml_1.jpg" class="workimage">
 
             </div>
+            <div class="workcontainer">
 
-            <div class="workcolumn2">
+                <img src="GD_Work_Images/mml/mml_5.png" class="workimage">
 
-                <img style="max-width: 620px;" src="GD_Work_Images/mml/mml_5.png" class="workwidth">
-
-                <img style="max-width: 620px;" src="GD_Work_Images/mml/mml_4.png" class="workwidth">
-
-                <img style="max-width: 620px;" src="GD_Work_Images/mml/mml_7.jpg" class="workwidth">
+                <img src="GD_Work_Images/mml/mml_4.png" class="workimage">
+                <img src="GD_Work_Images/mml/mml_7.jpg" class="workimage">
 
 
             </div>
@@ -186,10 +149,13 @@
         <br>
         <br>
         <!--PROJECT 3 -->
-        <div class="workrow">
-            <div class="workcolumn">
-                <h2>Hullabaloo</h2>
-                <p style="font-family: adobe-jenson-pro-display, serif; margin-top: -25px;">2025</p>
+        <div class="rowcontainer">
+            <div class="wordcontainer">
+                <h2 style="line-height: 0px;">Hullabaloo</h2>
+                <p style="font-family: adobe-jenson-pro-display, serif;">2025</p>
+                <br>
+                <br>
+                <br>
                 <p>
 
                     An imagined branding for a new in-print company under Huzzah Books, located in Boone, North Carolina. In collaboration with Megan Adylette, we created a playful framework, composed of monochrome patterns, allowing for a flexible and versatile brand that grows and evolves with the conversations Hullabaloo inspires.
@@ -199,118 +165,98 @@
                         play and meaningful connections through reviving old literature. Our publications inspire conversations on
                         identity, language and communication.</q>
 
-
+                </p>
 
 
             </div>
-            <div class="workcolumn2">
-                <img style="width: 620px;" src="GD_Work_Images/hullabaloo/hullabaloo_16.jpg" class="workwidth">
+            <div class="workcontainer">
+                <img src="GD_Work_Images/hullabaloo/hullabaloo_16.jpg" class="workimage">
 
 
             </div>
         </div>
 
         <br>
-        <div class="workrow">
-            <div class="workcolumn3">
+        <div class="rowcontainer">
+            <div class="workcontainer">
+                <img src="GD_Work_Images/hullabaloo/hullabaloo_1.jpg" class="workimage">
+                <img src="GD_Work_Images/hullabaloo/hullabaloo_2.jpg" class="workimage">
+                <img src="GD_Work_Images/hullabaloo/hullabaloo_3.jpg" class="workimage">
+                <img src="GD_Work_Images/hullabaloo/hullabaloo_4.jpg" class="workimage">
+                <img src="GD_Work_Images/hullabaloo/hullabaloo_5.jpg" class="workimage">
+                <img src="GD_Work_Images/hullabaloo/hullabaloo_6.jpg" class="workimage">
+                <img src="GD_Work_Images/hullabaloo/hullabaloo_15.jpg" class="workimage">
 
-                <img style="max-width: 620px;" src="GD_Work_Images/hullabaloo/hullabaloo_1.jpg" class="workwidth">
-
-                <img style="max-width: 620px;" src="GD_Work_Images/hullabaloo/hullabaloo_2.jpg" class="workwidth">
-
-                <img style="max-width: 620px;" src="GD_Work_Images/hullabaloo/hullabaloo_3.jpg" class="workwidth">
-
-                <img style="max-width: 620px;" src="GD_Work_Images/hullabaloo/hullabaloo_4.jpg" class="workwidth">
-
-                <img style="max-width: 620px;" src="GD_Work_Images/hullabaloo/hullabaloo_5.jpg" class="workwidth">
-
-                <img style="max-width: 620px;" src="GD_Work_Images/hullabaloo/hullabaloo_6.jpg" class="workwidth">
-
-
-
-                <img style="max-width: 620px;" src="GD_Work_Images/hullabaloo/hullabaloo_15.jpg" class="workwidth">
 
             </div>
+            <div class="workcontainer">
 
-            <div class="workcolumn2">
-
-                <img style="max-width: 620px;" src="GD_Work_Images/hullabaloo/hullabaloo_7.jpg" class="workwidth">
-
-                <img style="max-width: 620px;" src="GD_Work_Images/hullabaloo/hullabaloo_8.jpg" class="workwidth">
-
-                <img style="max-width: 620px;" src="GD_Work_Images/hullabaloo/hullabaloo_8.jpg" class="workwidth">
-
-                <img style="max-width: 620px;" src="GD_Work_Images/hullabaloo/hullabaloo_9.jpg" class="workwidth">
-
-                <img style="max-width: 620px;" src="GD_Work_Images/hullabaloo/hullabaloo_10.jpg" class="workwidth">
-
-                <img style="max-width: 620px;" src="GD_Work_Images/hullabaloo/hullabaloo_11.jpg" class="workwidth">
-
-                <img style="max-width: 620px;" src="GD_Work_Images/hullabaloo/hullabaloo_12.jpg" class="workwidth">
-
-                <img style="max-width: 620px;" src="GD_Work_Images/hullabaloo/hullabaloo_13.jpg" class="workwidth">
-
-                <img style="max-width: 620px;" src="GD_Work_Images/hullabaloo/hullabaloo_14.jpg" class="workwidth">
+                <img src="GD_Work_Images/hullabaloo/hullabaloo_7.jpg" class="workimage">
+                <img src="GD_Work_Images/hullabaloo/hullabaloo_8.jpg" class="workimage">
+                <img src="GD_Work_Images/hullabaloo/hullabaloo_8.jpg" class="workimage">
+                <img src="GD_Work_Images/hullabaloo/hullabaloo_9.jpg" class="workimage">
+                <img src="GD_Work_Images/hullabaloo/hullabaloo_10.jpg" class="workimage">
+                <img src="GD_Work_Images/hullabaloo/hullabaloo_11.jpg" class="workimage">
+                <img src="GD_Work_Images/hullabaloo/hullabaloo_12.jpg" class="workimage">
+                <img src="GD_Work_Images/hullabaloo/hullabaloo_13.jpg" class="workimage">
+                <img src="GD_Work_Images/hullabaloo/hullabaloo_14.jpg" class="workimage">
 
 
             </div>
         </div>
+
 
         <br>
         <br>
 
         <!--PROJECT 4 -->
-        <div class="workrow">
-            <div class="workcolumn">
-                <h2>Black American Gothic</h2>
-                <p style="font-family: adobe-jenson-pro-display, serif; margin-top: -25px;">2025</p>
+        <div class="rowcontainer">
+            <div class="wordcontainer">
+                <h2 style="line-height: 0px;">Black American Gothic</h2>
+                <p style="font-family: adobe-jenson-pro-display, serif;">2025</p>
+                <br>
+                <br>
+                <br>
                 <p>
 
                     Inspired by a fascination for the Southern Gothic, this poetry book, “Black American Gothic: The Critique of a Country Built on Hate,” came to life. It embodies the struggle black Americans have faced for centuries. When we think of Gothic literature, we picture monsters, mutilation, and horrors beyond belief. It was never a metaphor for the black populous but a reality. The books leads readers to understand what goes on, why, and what they can do to help.
 
-
+                </p>
 
 
             </div>
-            <div class="workcolumn2">
-                <img style="width: 620px;" src="GD_Work_Images/bag/bag_2.jpeg" class="workwidth">
+            <div class="workcontainer">
+                <img src="GD_Work_Images/bag/bag_2.jpeg" class="workimage">
 
 
             </div>
         </div>
 
         <br>
-        <div class="workrow">
-            <div class="workcolumn3">
+        <div class="rowcontainer">
+            <div class="workcontainer">
 
-                <img style="width: 620px;" src="GD_Work_Images/bag/bag_1.jpeg" class="workwidth">
+                <img src="GD_Work_Images/bag/bag_1.jpeg" class="workimage">
+                <img src="GD_Work_Images/bag/bag_3.jpeg" class="workimage">
+                <img src="GD_Work_Images/bag/bag_4.jpeg" class="workimage">
+                <img src="GD_Work_Images/bag/bag_5.jpeg" class="workimage">
+                <img src="GD_Work_Images/bag/bag_6.jpeg" class="workimage">
+                <img src="GD_Work_Images/bag/bag_7.jpeg" class="workimage">
 
-                <img style="width: 620px;" src="GD_Work_Images/bag/bag_3.jpeg" class="workwidth">
-
-                <img style="width: 620px;" src="GD_Work_Images/bag/bag_4.jpeg" class="workwidth">
-
-                <img style="width: 620px;" src="GD_Work_Images/bag/bag_5.jpeg" class="workwidth">
-
-                <img style="width: 620px;" src="GD_Work_Images/bag/bag_6.jpeg" class="workwidth">
-
-                <img style="width: 620px;" src="GD_Work_Images/bag/bag_7.jpeg" class="workwidth">
             </div>
+            <div class="workcontainer">
+                <img src="GD_Work_Images/bag/bag_8.jpeg" class="workimage">
+                <img src="GD_Work_Images/bag/bag_9.jpeg" class="workimage">
+                <img src="GD_Work_Images/bag/bag_10.jpeg" class="workimage">
+                <img src="GD_Work_Images/bag/bag_11.jpeg" class="workimage">
+                <img src="GD_Work_Images/bag/bag_12.jpeg" class="workimage">
+                <img src="GD_Work_Images/bag/bag_13.jpeg" class="workimage">
 
-            <div class="workcolumn2">
 
-                <img style="width: 620px;" src="GD_Work_Images/bag/bag_8.jpeg" class="workwidth">
 
-                <img style="width: 620px;" src="GD_Work_Images/bag/bag_9.jpeg" class="workwidth">
-
-                <img style="width: 620px;" src="GD_Work_Images/bag/bag_10.jpeg" class="workwidth">
-
-                <img style="width: 620px;" src="GD_Work_Images/bag/bag_11.jpeg" class="workwidth">
-
-                <img style="width: 620px;" src="GD_Work_Images/bag/bag_12.jpeg" class="workwidth">
-
-                <img style="width: 620px;" src="GD_Work_Images/bag/bag_13.jpeg" class="workwidth">
             </div>
         </div>
+
 
 
 
@@ -318,10 +264,13 @@
         <br>
         <br>
         <!--PROJECT 5 -->
-        <div class="workrow">
-            <div class="workcolumn">
-                <h2>Bivvy</h2>
-                <p style="font-family: adobe-jenson-pro-display, serif; margin-top: -25px;">2025</p>
+        <div class="rowcontainer">
+            <div class="wordcontainer">
+                <h2 style="line-height: 0px;">Bivvy</h2>
+                <p style="font-family: adobe-jenson-pro-display, serif;">2025</p>
+                <br>
+                <br>
+                <br>
                 <p>
 
                     Imagined branding and call to action for a website, envisioned by Amalie McCracken, that helps people find activities to do around their local areas. I specifically worked on the branch for Boone,
@@ -330,175 +279,154 @@
                     <br>
                     <q>Bivvy believes in the excitement and spontaneity of life! New experiences are always just around the corner, especially in your local community! With our amazingly curated quiz, you can find a random adventure to spice up your daily routine!</q>
 
-
+                </p>
 
 
             </div>
-            <div class="workcolumn2">
-                <img style="width: 620px;" src="GD_Work_Images/bivvy/bivvy_8.jpg" class="workwidth">
+            <div class="workcontainer">
+                <img src="GD_Work_Images/bivvy/bivvy_8.jpg" class="workimage">
 
 
             </div>
         </div>
 
         <br>
-        <div class="workrow">
-            <div class="workcolumn3">
+        <div class="rowcontainer">
+            <div class="workcontainer">
 
-                <img style="width: 620px;" src="GD_Work_Images/bivvy/bivvy_3.jpg" class="workwidth">
+                <img src="GD_Work_Images/bivvy/bivvy_3.jpg" class="workimage">
+                <img src="GD_Work_Images/bivvy/bivvy_1.jpg" class="workimage">
+                <img src="GD_Work_Images/bivvy/bivvy_2.jpg" class="workimage">
+                <img src="GD_Work_Images/bivvy/bivvy_4.jpg" class="workimage">
 
-                <img style="width: 620px;" src="GD_Work_Images/bivvy/bivvy_1.jpg" class="workwidth">
-
-                <img style="width: 620px;" src="GD_Work_Images/bivvy/bivvy_2.jpg" class="workwidth">
-
-                <img style="width: 620px;" src="GD_Work_Images/bivvy/bivvy_4.jpg" class="workwidth">
             </div>
+            <div class="workcontainer">
 
-            <div class="workcolumn2">
+                <img src="GD_Work_Images/bivvy/bivvy_7.jpg" class="workimage">
 
-                <img style="width: 620px;" src="GD_Work_Images/bivvy/bivvy_7.jpg" class="workwidth">
+                <img src="GD_Work_Images/bivvy/bivvy_5.jpg" class="workimage">
+                <img src="GD_Work_Images/bivvy/bivvy_6.jpg" class="workimage">
+                <img src="GD_Work_Images/bivvy/bivvy_9.jpg" class="workimage">
+                <img src="GD_Work_Images/bivvy/bivvy_10.jpg" class="workimage">
 
-                <img style="width: 620px;" src="GD_Work_Images/bivvy/bivvy_5.jpg" class="workwidth">
-
-                <img style="width: 620px;" src="GD_Work_Images/bivvy/bivvy_6.jpg" class="workwidth">
-
-                <img style="width: 620px;" src="GD_Work_Images/bivvy/bivvy_9.jpg" class="workwidth">
-
-                <img style="width: 620px;" src="GD_Work_Images/bivvy/bivvy_10.jpg" class="workwidth">
             </div>
         </div>
+
 
 
 
         <br>
         <br>
         <!--PROJECT 6 -->
-        <div class="workrow">
-            <div class="workcolumn">
-                <h2>Reflection of Practice: An Exploration</h2>
-                <p style="font-family: adobe-jenson-pro-display, serif; margin-top: -25px;">2024</p>
-                <p>
+        <div class="rowcontainer">
+            <div class="wordcontainer">
+                <h2 style="line-height: 0px;">Reflection of Practice: An Exploration</h2>
 
-                    This book takes the viewer through different points in design history via design and content. Based on each segment of text and the ideas surrounding it, I designed spreads to encapsulate and portray the concept to
-                    the reader.
+                <p style="font-family: adobe-jenson-pro-display, serif;">2024</p>
+                <br>
+                <br>
+                <br>
+                <p>This book takes the viewer through different points in design history via design and content. Based on each segment of text and the ideas surrounding it, I designed spreads to encapsulate and portray the concept to the reader.</p>
 
 
 
 
             </div>
-            <div class="workcolumn2">
+            <div class="workcontainer">
 
-                <img style="max-width: 620px;" src="GD_Work_Images/rop/rop_1.jpeg" class="workwidth">
+                <img src="GD_Work_Images/rop/rop_1.jpeg" class="workimage">
 
             </div>
         </div>
 
         <br>
-        <div class="workrow">
-            <div class="workcolumn3">
+        <div class="rowcontainer">
+            <div class="workcontainer">
 
-                <img style="max-width: 620px;" src="GD_Work_Images/rop/rop_2.jpeg" class="workwidth">
-
-                <img style="max-width: 620px;" src="GD_Work_Images/rop/rop_3.jpeg" class="workwidth">
-
-                <img style="max-width: 620px;" src="GD_Work_Images/rop/rop_4.jpeg" class="workwidth">
-
-                <img style="max-width: 620px;" src="GD_Work_Images/rop/rop_5.jpeg" class="workwidth">
-
-                <img style="max-width: 620px;" src="GD_Work_Images/rop/rop_6.jpeg" class="workwidth">
-
-                <img style="max-width: 620px;" src="GD_Work_Images/rop/rop_14.jpeg" class="workwidth">
+                <img src="GD_Work_Images/rop/rop_2.jpeg" class="workimage">
+                <img src="GD_Work_Images/rop/rop_4.jpeg" class="workimage">
+                <img src="GD_Work_Images/rop/rop_3.jpeg" class="workimage">
+                <img src="GD_Work_Images/rop/rop_5.jpeg" class="workimage">
+                <img src="GD_Work_Images/rop/rop_6.jpeg" class="workimage">
+                <img src="GD_Work_Images/rop/rop_14.jpeg" class="workimage">
 
             </div>
+            <div class="workcontainer">
 
-            <div class="workcolumn2">
+                <img src="GD_Work_Images/rop/rop_7.jpeg" class="workimage">
+                <img src="GD_Work_Images/rop/rop_8.jpeg" class="workimage">
+                <img src="GD_Work_Images/rop/rop_9.jpeg" class="workimage">
+                <img src="GD_Work_Images/rop/rop_10.jpeg" class="workimage">
+                <img src="GD_Work_Images/rop/rop_11.jpeg" class="workimage">
+                <img src="GD_Work_Images/rop/rop_12.jpeg" class="workimage">
+                <img src="GD_Work_Images/rop/rop_13.jpeg" class="workimage">
 
-                <img style="max-width: 620px;" src="GD_Work_Images/rop/rop_7.jpeg" class="workwidth">
-                
-                <img style="max-width: 620px;" src="GD_Work_Images/rop/rop_8.jpeg" class="workwidth">
-
-                <img style="max-width: 620px;" src="GD_Work_Images/rop/rop_9.jpeg" class="workwidth">
-
-                <img style="max-width: 620px;" src="GD_Work_Images/rop/rop_10.jpeg" class="workwidth">
-                
-                <img style="max-width: 620px;" src="GD_Work_Images/rop/rop_11.jpeg" class="workwidth">
-                
-                <img style="max-width: 620px;" src="GD_Work_Images/rop/rop_12.jpeg" class="workwidth">
-                
-                <img style="max-width: 620px;" src="GD_Work_Images/rop/rop_13.jpeg" class="workwidth">
-                
-                
             </div>
         </div>
+
+
+
+
+
+
+
         <br>
         <br>
 
         <!--PROJECT 7 -->
 
-        <div class="workrow">
-            <div class="workcolumn">
-                <h2>Tailey Bone</h2>
-                <p style="font-family: adobe-jenson-pro-display, serif; margin-top: -25px;">2024</p>
+        <div class="rowcontainer">
+            <div class="wordcontainer">
+                <h2 style="line-height: 0px;">Tailey Bone</h2>
+                <p style="font-family: adobe-jenson-pro-display, serif;">2024</p>
+                <br>
+                <br>
+                <br>
                 <p>
 
                     Through limited Illustrations, I depicted the Appalachian folk tale Tailey Bone. I developed a blocky shape-driven illustration style that implements overlaid fabric texture, giving the images more depth. I paired the drawings with a typeset retelling of the story, formatting it as an accordion-style book.
 
-
+                </p>
 
 
             </div>
-            <div class="workcolumn2">
-                <img style="width: 620px;" src="GD_Work_Images/taileybone/taileybone_3.jpg" class="workwidth">
+            <div class="workcontainer">
+                <img src="GD_Work_Images/taileybone/taileybone_3.jpg" class="workimage">
 
 
             </div>
         </div>
 
         <br>
-        <div class="workrow">
-            <div class="workcolumn3">
 
-                <img style="width: 620px;" src="GD_Work_Images/taileybone/taileybone_1.jpg" class="workwidth">
-            
-            </div>
-
-            <div class="workcolumn1">
-
-               <img style="width: 620px;" src="GD_Work_Images/taileybone/taileybone_2.jpg" class="workwidth">
-
-            </div>
-            
-            
-        </div>
-<div class="workrow">
-
-
-            <div class="workcolumn4">
-                <img style="width: 1240px;" src="GD_Work_Images/taileybone/taileybone_1.jpg" class="workwidth">
-
-            </div>
-
-        </div>
-
-<div class="workrow">
-
-
-            <div class="workcolumn4">
-                <img style="width: 1240px;" src="GD_Work_Images/taileybone/taileybone_2.jpg" class="workwidth">
-
-            </div>
-
-        </div>
         
-        <div class="workrow">
 
 
-            <div class="workcolumn4">
-                <img style="width: 1240px;" src="GD_Work_Images/taileybone/taileybone_4.jpg" class="workwidth">
+            <div class="rowcontainer">
+                <img src="GD_Work_Images/taileybone/taileybone_1.jpg" class="workimage">
 
             </div>
 
-        </div>
+      
+
+
+
+            <div class="rowcontainer">
+                <img src="GD_Work_Images/taileybone/taileybone_2.jpg" class="workimage">
+
+            </div>
+
+        
+
+        
+
+
+            <div class="rowcontainer">
+                <img src="GD_Work_Images/taileybone/taileybone_4.jpg" class="workimage">
+
+            </div>
+
+       
         <!--<div class="responsive">
   <div class="gallery">
     
