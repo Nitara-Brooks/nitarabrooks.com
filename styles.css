@@ -138,13 +138,13 @@ a:visited {
 
 .topnav a:hover,
 .dropdown:hover .dropbtn {
-    background-color: rgba(93, 92, 27, 0.32);
+    background-color: #5D5C1B;
     color: relative;
 }
 
 .dropdown-content a:hover {
     background-color: relative;
-    color: relative;
+    color: #E5F1CD;
 }
 
 .dropdown:hover .dropdown-content {
