@@ -427,7 +427,7 @@ h4 {
     width: 100%;
     opacity: 0;
     transition: .3s ease;
-
+background-color:rgba(229, 241, 205, 0.5);
 }
 
 .container:hover .overlay {
@@ -454,6 +454,7 @@ h4 {
 
 .fa-user:hover {
     color: #eee;
+    background-color:rgba(229, 241, 205, 0.5);
 }
 
 /*PROJECT OVERLAY END*/
