@@ -106,6 +106,7 @@ a:visited {
 .dropdown .dropbtn {
     font-size: 20px;
     border: none;
+    border-radius:25px;
     outline: none;
     color: #5D5C1B;
     padding: 14px 25px;
