@@ -427,7 +427,7 @@ h4 {
     width: 100%;
     opacity: 0;
     transition: .3s ease;
-background-color:rgba(229, 241, 205, 0.5);
+color:rgba(229, 241, 205, 0.5);
 }
 
 .container:hover .overlay {
