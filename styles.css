@@ -431,7 +431,7 @@ color:#E5F1CD;
 }
 
 .container:hover .overlay {
-    opacity: .75;
+    opacity: 0.9;
 }
 
 .icon {
