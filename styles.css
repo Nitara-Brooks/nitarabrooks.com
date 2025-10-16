@@ -483,7 +483,7 @@ td {
     margin-right: auto;
 }
 @media (max-width:1000px) {
-    .gdcontainer {
+    .container {
         display: flex;
         flex-wrap: wrap;
         flex: 100%;
