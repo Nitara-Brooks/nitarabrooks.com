@@ -482,6 +482,14 @@ td {
     margin-left: auto;
     margin-right: auto;
 }
+@media (max-width:1000px) {
+    .gdcontainer {
+        display: flex;
+        flex-wrap: wrap;
+        flex: 100%;
+        max-width: 100%;
+    }
+}
 
 .label {
 
