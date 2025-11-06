@@ -843,6 +843,7 @@ p {
     margin-right: auto;
     max-width: 1240px;
     height: 100px;
+    align-content: center;
 }
 
 .fa-instagram {
