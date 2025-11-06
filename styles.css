@@ -843,6 +843,12 @@ p {
     margin-right: auto;
     max-width: 1240px;
     height: 100px;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
 /*GRAPHIC DESIGN PAGE END*/
 
 
