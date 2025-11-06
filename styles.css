@@ -834,98 +834,17 @@ p {
 
 
 /*WORK PAGE COLUMNS*/
-
+#footer {
+    display: block;
+    background-color: #5D5C1B;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1240px;
 /*GRAPHIC DESIGN PAGE END*/
 
 
 
 
 
-/*CONTACT PAGE*/
-/*input[type=text],
-select,
-textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #E5F1CD;
-    border-radius: 4px;
-    box-sizing: border-box;
-    margin-top: 6px;
-    margin-bottom: 16px;
-    resize: vertical;
-    background-color: #E5F1CD;
-    color: #5D5C1B;
-    font-family: "adobe-jenson-pro-bold-display", serif;
-}
-
-label {
-    padding: 12px 12px 12px 0;
-    display: inline-block;
-}
-
-input[type=submit] {
-    background-color: #E5F1CD;
-    color: #5D5C1B;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-
-}
-
-input[type=submit]:hover {
-    text-decoration: underline;
-
-}*/
-
-/*.contactcontainer {
-    border-radius: 5px;
-    background-color: #5D5C1B;
-    padding: 20px;
-    color: #E5F1CD;
-    font-family: cronos-pro-display, sans-serif;
-    font-size: 20px;
-    width: 1240px;
-    margin: auto;
-}
-
-
-.contacth {
-    font-family: cronos-pro-display, sans-serif;
-    font-size: 30px;
-
-
-}*/
-
-/*.contactcol-25 {
-    float: left;
-    width: 25%;
-    margin-top: 6px;
-}
-
-.contactcol-75 {
-    float: left;
-    width: 75%;
-    margin-top: 6px;
-}*/
-
-
-/*.contactrow:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-*/
-
-
-/*@media screen and (max-width: 600px) {
-
-    .contactcol-25,
-    .contactcol-75,
-    input[type=submit] {
-        width: 100%;
-        margin-top: 0;
-    }
-*/
-
-/*CONTACT PAGE*/
