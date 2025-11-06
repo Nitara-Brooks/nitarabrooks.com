@@ -847,8 +847,9 @@ p {
 }
 
 .fa-instagram {
-  background: none;
-  color: #E5F1CD;
+  background: #E5F1CD;
+  color: none;
+    border-radius: 50%;
 }
 /*GRAPHIC DESIGN PAGE END*/
 
