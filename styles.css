@@ -844,8 +844,7 @@ p {
     max-width: 1240px;
     height: 100px;
     align-content: center;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
 }
 
 
