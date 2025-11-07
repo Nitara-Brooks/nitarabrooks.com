@@ -836,7 +836,7 @@ p {
 /*WORK PAGE COLUMNS*/
 #footer {
     display: block;
-    background-color: #5D5C1B;
+    background-color: none;
     padding-top: 10px;
     padding-bottom: 10px;
     margin-left: auto;
