@@ -1,4 +1,4 @@
-/* fonts */
+1/* fonts */
 
 @import url("https://p.typekit.net/p.css?s=1&k=nbi3yik&ht=tk&f=17080.18366&a=139238061&app=typekit&e=css");
 
@@ -842,7 +842,7 @@ p {
     margin-left: auto;
     margin-right: auto;
     max-width: 1240px;
-    min-height: 150px;
+    min-height: 100px;
     align-content: center;
     text-align: center;
     padding: 10px;
